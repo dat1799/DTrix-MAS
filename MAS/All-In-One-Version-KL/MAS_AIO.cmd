@@ -420,7 +420,7 @@ goto dk_done
 cls
 color 07
 title  DTrix-MAS %masver%
-if not defined terminal mode 76, 34
+if not defined terminal mode 76, 30
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-*EvalEdition~*.mum" set _evalexist=1
@@ -478,20 +478,14 @@ echo:             [6] Change Windows Edition
 echo:             [7] Change Office Edition
 echo:             __________________________________________________      
 echo:
-echo:             [8] Troubleshoot
-echo:             [E] Extras
-echo:             [H] Help
 echo:             [0] Exit
 echo:       ______________________________________________________________
 echo:
-call :dk_color2 %_White% "         " %_Green% "Choose a menu option using your keyboard [1,2,3...E,H,0] :"
-choice /C:12345678EH0 /N
+call :dk_color2 %_White% "         " %_Green% "Choose a menu option using your keyboard [1,2,3...7,0] :"
+choice /C:12345670 /N
 set _erl=%errorlevel%
 
-if %_erl%==11 exit /b
-if %_erl%==10 (start %selfgit% & start %github% & start %mas%troubleshoot & goto :MainMenu)
-if %_erl%==9 goto :Extras
-if %_erl%==8 setlocal & call :troubleshoot      & cls & endlocal & goto :MainMenu
+if %_erl%==8 exit /b
 if %_erl%==7 setlocal & call :change_offedition & cls & endlocal & goto :MainMenu
 if %_erl%==6 setlocal & call :change_winedition & cls & endlocal & goto :MainMenu
 if %_erl%==5 setlocal & call :check_actstatus   & cls & endlocal & goto :MainMenu
