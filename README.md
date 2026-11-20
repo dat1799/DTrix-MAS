@@ -1,84 +1,61 @@
-<p align="center"><img src="https://massgrave.dev/img/logo_small.png" alt="MAS Logo"></p>
+<p align="center"><img src="https://massgrave.dev/img/logo_small.png" alt="DTrix-MAS Logo"></p>
 
 <h1 align="center">DTrix-MAS</h1>
 
-<p align="center">Open-source Windows and Office activator featuring HWID, Ohook, TSforge, and Online KMS activation methods, along with advanced troubleshooting.</p>
+<p align="center">Công cụ kích hoạt bản quyền Windows và Microsoft Office mã nguồn mở hỗ trợ các phương thức HWID (Bản quyền số), Ohook, TSforge và Online KMS cùng các tính năng khắc phục sự cố nâng cao.</p>
 
 <hr>
-  
-## How to Activate Windows / Office / Extended Security Updates (ESU)?
 
-### Method 1 - PowerShell ❤️
+## 🚀 Hướng Dẫn Kích Hoạt Windows / Office / ESU
 
-1. Click the **Start Menu**, type `PowerShell`, and open it.
+### Cách 1 - Chạy Trực Tiếp Bằng File Script (Khuyên dùng)
 
-2. Copy and paste the code below and press **Enter.**  
-   - For **Windows 8.1, 10 and 11**:
-     ```
+1. Tải về hoặc clone repository này về máy tính của bạn:
+   - File chạy trực tiếp: [**MAS_AIO.cmd**](MAS/All-In-One-Version-KL/MAS_AIO.cmd)
+2. Nhấp đúp (hoặc nhấp chuột phải chọn **Run as administrator**) file `MAS_AIO.cmd`.
+3. Trong giao diện menu xuất hiện, bấm phím số tương ứng với tùy chọn màu **Xanh lá cây (Green)** để tiến hành kích hoạt.
+
+---
+
+### Cách 2 - Chạy Nhanh Qua PowerShell ❤️
+
+1. Mở **Start Menu**, tìm kiếm `PowerShell` và mở lên.
+2. Dán đoạn mã bên dưới vào và nhấn **Enter**:
+   - Đối với **Windows 8.1, 10 và 11**:
+     ```powershell
      irm https://get.activated.win | iex
      ```
-	 If the above is blocked (by ISP/DNS), try this (needs updated Windows 10 or 11):  
-	 ```
-	 iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
-	 ```
-	- **Script not launching? Use the below-listed Method 2.**
-
-3. In the menu that appears, type the number corresponding to one of the **Green** options.
+   - Trường hợp lệnh trên bị chặn bởi nhà mạng (ISP/DNS), hãy thử lệnh hỗ trợ DoH:
+     ```powershell
+     iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
+     ```
+3. Trong menu hiện ra, bấm phím số tương ứng với tùy chọn màu **Xanh lá cây (Green)**.
 
 ---
 
-### Method 2 - Traditional (Windows Vista and later)
+## 📋 Bảng So Sánh Các Phương Thức Kích Hoạt
 
-1.   Download the script:
-      *   [**MAS_AIO.cmd**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&download=true) (Direct script)
-      *   [**MAS_AIO.zip**](https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?$format=zip) (If the direct script is blocked by your browser)
-2.   Run the `MAS_AIO.cmd` file.
-3.   In the menu that appears, type the number corresponding to one of the **Green** options.
+| Phương Thức | Sản Phẩm Hỗ Trợ | Thời Hạn Kích Hoạt | Ghi Chú |
+| :--- | :--- | :--- | :--- |
+| **HWID** | Windows 10 - 11 | **Vĩnh viễn** | Gắn liền với bo mạch chủ (Motherboard) |
+| **Ohook** | Microsoft Office | **Vĩnh viễn** | Không cần gia hạn, không bị quét bản quyền |
+| **TSforge** | Windows / ESU / Office | **Vĩnh viễn** | Hỗ trợ Windows 10 EOL và các bản vá mở rộng |
+| **Online KMS** | Windows / Office | **180 Ngày** | Tự động gia hạn định kỳ thông qua tác vụ nền |
 
 ---
 
-> [!TIP]
-> - Some ISPs/DNS providers block access to our domains. You can bypass this by enabling [DNS-over-HTTPS (DoH)](https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/encrypted-dns-browsers/) in your browser. 
-> - **Having trouble**? Visit our [troubleshooting page](https://massgrave.dev/troubleshoot) or raise an issue on [GitHub](https://github.com/dat1799/DTrix-MAS/issues).
+## ⚠️ Lưu Ý Quan Trọng
 
 > [!NOTE]
->
-> - The `irm` command in PowerShell downloads a script from a specified URL, and the `iex` command executes it.
-> - Always double-check the URL before executing the command and verify the source is trustworthy when manually downloading files.
-> - Be cautious of third parties spreading malware disguised as MAS by altering the URL in the PowerShell command.
+> - Đây là repository của dự án [**DTrix-MAS**](https://github.com/dat1799/DTrix-MAS).
+> - Khi tải script thủ công từ Internet, hãy luôn kiểm tra nguồn gốc đáng tin cậy để tránh các rủi ro bảo mật mã độc.
+> - Nếu gặp lỗi hoặc thắc mắc, bạn có thể tạo Issue tại [GitHub Issues](https://github.com/dat1799/DTrix-MAS/issues).
 
 ---
 
 <div align="center">
-	
-### Homepage - [https://massgrave.dev/](https://massgrave.dev/)
-  
-[![1.1]][1]
-[![1.2]][2]
-[![1.3]][3]
-[![1.4]][4]
-[![1.5]][5]
-[![1.6]][6]
-[![1.7]][7]
 
-[1.1]: https://massgrave.dev/img/logo_discord.png (Chat with us without signup)
-[1.2]: https://massgrave.dev/img/logo_reddit.png (Reddit)
-[1.3]: https://massgrave.dev/img/logo_bluesky.png (Bluesky)
-[1.4]: https://massgrave.dev/img/logo_x.png (Twitter)
+**Phiên bản:** 3.14  
+**Giấy phép:** [MIT License](LICENSE)
 
-[1.5]: https://massgrave.dev/img/logo_github.png (GitHub)
-[1.6]: https://massgrave.dev/img/logo_azuredevops.png (AzureDevOps)
-[1.7]: https://massgrave.dev/img/logo_gitea.png (Self-hosted Git)
-
-[1]: https://discord.gg/j2yFsV5ZVC
-[2]: https://www.reddit.com/r/MAS_Activator
-[3]: https://bsky.app/profile/massgrave.dev
-[4]: https://twitter.com/massgravel
-[5]: https://github.com/dat1799/DTrix-MAS
-[6]: https://dev.azure.com/massgrave/_git/Microsoft-Activation-Scripts
-[7]: https://git.activated.win/Microsoft-Activation-Scripts
-
----
-
-Latest Version: 3.14  
-Release date: 11-Nov-2026
+</div>
