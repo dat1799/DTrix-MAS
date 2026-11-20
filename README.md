@@ -1,5 +1,3 @@
-<p align="center"><img src="https://massgrave.dev/img/logo_small.png" alt="DTrix-MAS Logo"></p>
-
 <h1 align="center">DTrix-MAS</h1>
 
 <p align="center">Công cụ kích hoạt bản quyền Windows và Microsoft Office mã nguồn mở hỗ trợ các phương thức HWID (Bản quyền số), Ohook, TSforge và Online KMS cùng các tính năng khắc phục sự cố nâng cao.</p>

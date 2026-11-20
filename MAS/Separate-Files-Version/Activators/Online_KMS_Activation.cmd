@@ -5,7 +5,7 @@
 
 ::============================================================================
 ::
-::   Homepage: m{}assgrave{dot}dev
+::   Homepage: https://github.com/dat1799/DTrix-MAS
 ::
 ::============================================================================
 
@@ -136,9 +136,9 @@ set "nul="
 ::========================================================================================================================================
 
 set "blank="
-set "mas=ht%blank%tps%blank%://m%blank%ass%blank%grave.dev/"
-set "github=ht%blank%tps%blank%://github.com/m%blank%assgra%blank%vel/Micro%blank%soft-Acti%blank%vation-Scripts"
-set "selfgit=ht%blank%tps%blank%://git.acti%blank%vated.win/Micr%blank%osoft-Act%blank%ivation-Scripts"
+set "mas=https://github.com/dat1799/DTrix-MAS/"
+set "github=https://github.com/dat1799/DTrix-MAS"
+set "selfgit=https://github.com/dat1799/DTrix-MAS"
 
 ::  Check if Null service is working, it's important for the batch script
 
@@ -415,17 +415,9 @@ set old=
 set pingp=
 set upver=%masver:.=%
 
-for %%A in (
-activ%-%ated.win
-mass%-%grave.dev
-) do if not defined pingp (
-for /f "delims=[] tokens=2" %%B in ('ping -n 1 %%A') do (
-if not "%%B"=="" (set old=1& set pingp=1)
-for /f "delims=[] tokens=2" %%C in ('ping -n 1 updatecheck%upver%.%%A') do (
-if not "%%C"=="" set old=
-)
-)
-)
+::  Update check bypassed for DTrix-MAS
+set old=
+set pingp=1
 
 if defined old (
 echo ________________________________________________
@@ -1032,7 +1024,7 @@ if %winbuild% GEQ 9200 (
 for /f "skip=2 tokens=2*" %%a in ('"reg query HKLM\SOFTWARE\Microsoft\Office\ClickToRun /v InstallPath" %nul6%') do if exist "%%b\root\Licenses16\ProPlus*.xrm-ms" set "_C16R=1"
 for /f "skip=2 tokens=2*" %%a in ('"reg query HKLM\SOFTWARE\Microsoft\Office\ClickToRun /v InstallPath /reg:32" %nul6%') do if exist "%%b\root\Licenses16\ProPlus*.xrm-ms" set "_C16R=1"
 if defined _C16R (
-REM  mass{}grave{dot}dev/office-license-is-not-genuine
+REM  https://github.com/dat1799/DTrix-MAS/office-license-is-not-genuine
 set _server=10.0.0.10
 call :_taskregserv
 echo Keeping the non-existent IP address 10.0.0.10 as %KS% Server.
@@ -1726,7 +1718,7 @@ exit /b
 
 ::============================================================================
 ::
-::   Homepage: m{}assgrave{dot}dev
+::   Homepage: https://github.com/dat1799/DTrix-MAS
 ::
 ::============================================================================
 
@@ -2332,9 +2324,9 @@ echo     C:\Program Files\Activation-Renewal\Info.txt
 echo     C:\Program Files\Activation-Renewal\Logs.txt
 echo ______________________________________________________________________________________________
 echo:
-echo   This Script is a part of MAS project.
+echo   This Script is a part of DTrix-MAS project.
 echo:   
-echo   Homepage: mass%w%grave%w%.dev
+echo   Homepage: https://github.com/dat1799/DTrix-MAS
 )>"%_dest%\Info.txt"
 exit /b
 

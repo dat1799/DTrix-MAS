@@ -5,7 +5,7 @@
 
 ::============================================================================
 ::
-::   Homepage: m{}assgrave{dot}dev
+::   Homepage: https://github.com/dat1799/DTrix-MAS
 ::
 ::============================================================================
 
@@ -145,9 +145,9 @@ set "nul="
 ::========================================================================================================================================
 
 set "blank="
-set "mas=ht%blank%tps%blank%://m%blank%ass%blank%grave.dev/"
-set "github=ht%blank%tps%blank%://github.com/m%blank%assgra%blank%vel/Micro%blank%soft-Acti%blank%vation-Scripts"
-set "selfgit=ht%blank%tps%blank%://git.acti%blank%vated.win/Micr%blank%osoft-Act%blank%ivation-Scripts"
+set "mas=https://github.com/dat1799/DTrix-MAS/"
+set "github=https://github.com/dat1799/DTrix-MAS"
+set "selfgit=https://github.com/dat1799/DTrix-MAS"
 
 ::  Check if Null service is working, it's important for the batch script
 
@@ -441,17 +441,9 @@ set old=
 set pingp=
 set upver=%masver:.=%
 
-for %%A in (
-activ%-%ated.win
-mass%-%grave.dev
-) do if not defined pingp (
-for /f "delims=[] tokens=2" %%B in ('ping -n 1 %%A') do (
-if not "%%B"=="" (set old=1& set pingp=1)
-for /f "delims=[] tokens=2" %%C in ('ping -n 1 updatecheck%upver%.%%A') do (
-if not "%%C"=="" set old=
-)
-)
-)
+::  Update check bypassed for DTrix-MAS
+set old=
+set pingp=1
 
 if defined old (
 echo ________________________________________________
@@ -1489,7 +1481,7 @@ call :ts_process
 
 ::========================================================================================================================================
 
-::  mass{}grave{dot}dev/office-license-is-not-genuine
+::  https://github.com/dat1799/DTrix-MAS/office-license-is-not-genuine
 ::  Add registry keys for volume products so that 'non-genuine' banner won't appear 
 
 set "kmskey=HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\0ff1ce15-a989-479d-af46-f275c6370663"
