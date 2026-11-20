@@ -22,7 +22,7 @@
 1. Mở **Start Menu**, gõ `PowerShell` và mở lên.
 2. Dán đoạn mã bên dưới vào và nhấn **Enter**:
    ```powershell
-   irm https://raw.githubusercontent.com/dat1799/DTrix-MAS/main/MAS/All-In-One-Version-KL/MAS_AIO.cmd | iex
+   irm https://raw.githubusercontent.com/dat1799/DTrix-MAS/main/run.ps1 | iex
    ```
 3. Trong menu xuất hiện, bấm phím số tương ứng với tùy chọn màu **Xanh lá cây (Green)**.
 
