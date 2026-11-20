@@ -17,19 +17,14 @@
 
 ---
 
-### Cách 2 - Chạy Nhanh Qua PowerShell ❤️
+### Cách 2 - Chạy Trực Tuyến Qua PowerShell ❤️
 
-1. Mở **Start Menu**, tìm kiếm `PowerShell` và mở lên.
+1. Mở **Start Menu**, gõ `PowerShell` và mở lên.
 2. Dán đoạn mã bên dưới vào và nhấn **Enter**:
-   - Đối với **Windows 8.1, 10 và 11**:
-     ```powershell
-     irm https://get.activated.win | iex
-     ```
-   - Trường hợp lệnh trên bị chặn bởi nhà mạng (ISP/DNS), hãy thử lệnh hỗ trợ DoH:
-     ```powershell
-     iex (curl.exe -s --doh-url https://1.1.1.1/dns-query https://get.activated.win | Out-String)
-     ```
-3. Trong menu hiện ra, bấm phím số tương ứng với tùy chọn màu **Xanh lá cây (Green)**.
+   ```powershell
+   irm https://raw.githubusercontent.com/dat1799/DTrix-MAS/main/MAS/All-In-One-Version-KL/MAS_AIO.cmd | iex
+   ```
+3. Trong menu xuất hiện, bấm phím số tương ứng với tùy chọn màu **Xanh lá cây (Green)**.
 
 ---
 
