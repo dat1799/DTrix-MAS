@@ -48,6 +48,16 @@
 
 ---
 
+## ⚖️ Tuyên Bố Miễn Trừ Trách Nhiệm (Disclaimer)
+
+> [!WARNING]
+> - **Mục đích nghiên cứu & học tập:** Dự án này được chia sẻ hoàn toàn với mục đích nghiên cứu kỹ thuật và thử nghiệm giáo dục. Tác giả không khuyến khích hay cổ súy cho hành vi vi phạm bản quyền phần mềm thương mại.
+> - **Cung cấp nguyên trạng (As-Is):** Toàn bộ mã nguồn và tập lệnh được cung cấp "nguyên trạng", không có bất kỳ cam kết hay bảo hành nào (dù được diễn đạt trực tiếp hay ngụ ý).
+> - **Trách nhiệm người dùng:** Người sử dụng tự chịu hoàn toàn trách nhiệm về mọi rủi ro, hỏng hóc hệ thống, mất mát dữ liệu hoặc các vấn đề liên quan đến pháp lý phát sinh từ việc sử dụng script này.
+> - **Bản quyền chính thức:** Nếu bạn có điều kiện hoặc sử dụng cho môi trường doanh nghiệp/thương mại, hãy mua bản quyền chính hãng từ Microsoft hoặc các nhà phân phối ủy quyền để ủng hộ nhà phát triển.
+
+---
+
 <div align="center">
 
 **Phiên bản:** 3.14  
